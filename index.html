@@ -9,18 +9,19 @@
     <title>Mike's Password Generator!</title>
 </head>
 
-<body>
+<body onload="genpassword()">
+    
     <h1>Password Generator</h1>
     <div class="container">
         <hr>
         <form>
             <div class="generator">
                 <label for="passwordinput">Your Secure Password</label>
-                <input type="password"  
+                <input type="text" id="test_password">
             </div>
             </form> 
             <div class="row">
-            <button onclick="genpassword">Generate Password</button>
+            <button type="button" onclick="getvalues()">Generate Password</button>
             </div>
             <div class="row">
             <button onclick="">Copy To Clipboard</button>
